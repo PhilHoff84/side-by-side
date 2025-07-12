@@ -15,10 +15,9 @@ The following steps are required to run this project:
 ## Previews
 
 In order to see a preview of the video, you need `ffplay`.
-Unfortunately, this cannot be installed as a Python dependency.
-Instead, you have to download / install it from: <https://ffmpeg.org/download.html>
-
-Then add it to your `PATH` or place copy the file to the root of this repository.
+Unfortunately, this cannot be installed as a Python dependency. \
+Instead, you have to download / install it separately[³](#2-instructions-to-install-python-via-uv-can-be-found-in-their-documentation),
+and then add it to your `PATH` or place copy the file to the root of this repository.
 
 ## Development
 
@@ -53,3 +52,11 @@ Run all checks:
 ```shell
 pre-commit run -a
 ```
+
+---
+
+###### 1: Instructions to [install `uv`](https://docs.astral.sh/uv/getting-started/installation) can be found in their documentation.
+
+###### 2: Instructions to [install Python via `uv`](https://docs.astral.sh/uv/guides/install-python) can be found in their documentation.
+
+###### 3: Instructions to [download / install `ffplay`](https://ffmpeg.org/download.html) can be found in the `ffmpeg` documentation.
