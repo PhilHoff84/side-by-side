@@ -1,0 +1,26 @@
+[project]
+name = "side-by-side"
+version = "0.0.0"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "moviepy>=2.2.1",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+    "ruff>=0.12.3",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    # https://docs.astral.sh/ruff/rules/
+    "F", "E", "W", "I", "C90", "N", "ANN", "ASYNC", "S", "BLE", "FBT", "B", "A", "COM", "C4", "DTZ", "T10", "FA",
+    "ISC", "ICN", "LOG", "G", "INP", "PIE", "T20", "Q", "RSE", "RET", "SLOT", "SIM", "TC", "ARG", "PTH", "PL", "TRY",
+    "FLY", "PERF", "FURB", "RUF",
+]
+ignore = ["ANN204", "ANN401", "S311", "COM812", "ISC001", "PLR2004", "TRY003"]
